@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= <h1>Formulir Mahasiswa</h1>
+
+    <!-- Bagian form pendaftaran mahasiswa -->
+    <div class="container">
+
+    <title>Document</title>
+     <style>
+        /* Mengatur tampilan seluruh halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333333;
+            padding: 20px;
+        }
+
+        /* Class untuk kotak form dan tabel */
+        .container {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        /* Mengatur judul */
+        h1, h2 {
+            color: #1565c0;
+            text-align: center;
+        }
+
+        /* Mengatur label dan input */
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #999999;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        /* Mengatur tombol */
+        button {
+            background-color: #1565c0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        /* Mengatur tabel mahasiswa */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #777777;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1565c0;
+            color: white;
+        }
+
+        /* Class untuk baris dengan warna berbeda */
+        .baris-ganjil {
+            background-color: #e3f2fd;
+        }
+    </style>
+</head>
+<body>
+            <h2>Form Pendaftaran</h2>
+
+        <form>
+            <!-- Elemen text -->
+            <label for="nama">Nama Mahasiswa:</label>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Masukkan nama" required>
+
+            <!-- Elemen email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Masukkan email" required>
+
+            <!-- Elemen radio -->
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="laki" name="jk" value="Laki-laki">
+            <label for="laki" style="display:inline;">Laki-laki</label>
+
+            <input type="radio" id="perempuan" name="jk" value="Perempuan">
+            <label for="perempuan" style="display:inline;">Perempuan</label>
+
+            <!-- Elemen checkbox -->
+            <label>Hobi:</label>
+            <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+            <label for="membaca" style="display:inline;">Membaca</label>
+
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+            <label for="olahraga" style="display:inline;">Olahraga</label>
+
+            <!-- Elemen select -->
+            <label for="prodi">Program Studi:</label>
+            <select id="prodi" name="prodi">
+                <option value="">-- Pilih Prodi --</option>
+                <option value="TI">Teknik Informatika</option>
+                <option value="SI">Sistem Informasi</option>
+                <option value="MI">Manajemen Informatika</option>
+            </select>
+
+            <!-- Elemen textarea -->
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4"
+                      placeholder="Masukkan alamat"></textarea>
+
+            <!-- Tombol form -->
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <!-- Bagian tabel data mahasiswa -->
+    <div class="container">
+        <h2>Data Mahasiswa</h2>
+
+        <table>
+            <!-- Header tabel -->
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Prodi</th>
+                <th>IPK</th>
+            </tr>
+
+            <!-- Data mahasiswa pertama -->
+            <tr class="baris-ganjil">
+                <td>231001</td>
+                <td>Andi</td>
+                <td>TI</td>
+                <td>3.75</td>
+            </tr>
+
+            <!-- Data mahasiswa kedua -->
+            <tr>
+                <td>231002</td>
+                <td>Budi</td>
+                <td>SI</td>
+                <td>3.60</td>
+            </tr>
+
+            <!-- Data mahasiswa ketiga -->
+            <tr class="baris-ganjil">
+                <td>231003</td>
+                <td>Citra</td>
+                <td>TI</td>
+                <td>3.85</td>
+            </tr>
+
+            <!-- Data mahasiswa keempat -->
+            <tr>
+                <td>231004</td>
+                <td>Dina</td>
+                <td>MI</td>
+                <td>3.50</td>
+            </tr>
+
+            <!-- Data mahasiswa kelima -->
+            <tr class="baris-ganjil">
+                <td>231005</td>
+                <td>Eko</td>
+                <td>SI</td>
+                <td>3.70</td>
+            </tr>
+
+            <!-- Contoh penggunaan colspan -->
+            <tr>
+                <td colspan="3"><b>Jumlah Mahasiswa</b></td>
+                <td><b>5</b></td>
+            </tr>
+        </table>
+    </div>, initial-scale=1.0">
+</body>
+</html>
